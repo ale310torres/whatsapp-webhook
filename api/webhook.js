@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const verifyToken = "torres123";
-  const activepiecesWebhookUrl = "PEGA_AQUI_TU_WEBHOOK_DE_ACTIVEPIECES";
+  const activepiecesWebhookUrl = "https://cloud.activepieces.com/api/v1/webhooks/iyn1uDUSw1Z9EiKEYu8vT";
 
   if (req.method === "GET") {
     const mode = req.query["hub.mode"];
