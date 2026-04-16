@@ -14,7 +14,7 @@ export default async function handler(req, res) {
   }
 
   if (req.method === "POST") {
-    console.log("Webhook payload:", req.body);
+    console.log("Webhook payload:", JSON.stringify(req.body, null, 2));
     return res.status(200).send("EVENT_RECEIVED");
   }
 
